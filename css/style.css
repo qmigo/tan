@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #f0f0f0; 
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: confetti-fall 3s ease-out infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(600px) rotate(360deg);
+  }
+}
+
+/* Create multiple confetti elements with different colors */
+.confetti:nth-child(1) { left: 5%; background-color: #e44d26; animation-delay: 0.2s; }
+.confetti:nth-child(2) { left: 15%; background-color: #4caf50; animation-delay: 0.4s; }
+.confetti:nth-child(3) { left: 25%; background-color: #2196f3; animation-delay: 0.6s; }
+.confetti:nth-child(4) { left: 35%; background-color: #ffeb3b; animation-delay: 0.8s; }
+.confetti:nth-child(5) { left: 45%; background-color: #ff5722; animation-delay: 1.0s; }
+.confetti:nth-child(6) { left: 55%; background-color: #9c27b0; animation-delay: 1.2s; }
+.confetti:nth-child(7) { left: 65%; background-color: #ff9800; animation-delay: 1.4s; }
+.confetti:nth-child(8) { left: 75%; background-color: #795548; animation-delay: 1.6s; }
+.confetti:nth-child(9) { left: 85%; background-color: #607d8b; animation-delay: 1.8s; }
+.confetti:nth-child(10) { left: 95%; background-color: #673ab7; animation-delay: 2.0s; }
+
+
+.animated-text {
+    font-size: 24px;
+    
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+
+.animated-right 
+{
+    animation: moveRightLeft 2s ease-in-out infinite;
+
+}
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px); /* Adjust the value based on how much you want it to move */
+    }
+  }
+  @keyframes moveRightLeft {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px); /* Adjust the value based on how much you want it to move */
+    }
+  }
+
+  .fade-in-out {
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
+
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+.header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  20px auto;
+}
+
+.h-primary
+{
+    color: #e44d26;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.card
+{
+    visibility: hidden;
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-item
+{   
+    width: 40%;
+    height: 90%;
+    margin-left: 50px;;
+    /* background: red; */
+}
+
+#video{
+    height: 300px;
+    object-fit: contain;
+    box-shadow: 0 0 6px 3px rgb(38, 36, 36);
+}
+
+.footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn
+{
+    font-size: 1.5rem;
+    background-color: rgb(188, 39, 39);
+    color: white;
+    font-family: cursive;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
